@@ -1,13 +1,14 @@
 [build]
   environment = { AWS_LAMBDA_JS_RUNTIME = "nodejs14.x" }
-  publish = "out"
+  publish = ".next"
   command = "yarn run build-prod"
 
 [template]
   incoming-hooks = ["Contentful"]
 
 [template.environment]
-  AWS_LAMBDA_JS_RUNTIME = "nodejs14.x"  
-  NEXT_PUBLIC_CONTRACT_ID = "REPLACE_WITH_CONTRACT_ADDRESS"  
-  NEXT_PUBLIC_NETWORK_ID = "REPLACE_WITH_NETWORK_ID"  
-  NEXT_PUBLIC_NETWORK_NAME = "REPLACE_WITH_NETWORK_NAME"  
+  NEXT_PUBLIC_API_BASE_URL = https://service.demo.prosopo.io:3000
+  NEXT_PUBLIC_API_PATH_PREFIX = /v1/prosopo
+  NEXT_PUBLIC_CONTRACT_ADDRESS = 5Go2hCf1WHzKqt1HGCUwhKfUS85477HUHgvaKkMJRYBfyiUP
+  NEXT_PUBLIC_CONTRACT_URL = wss://service.demo.prosopo.io:9944
+  MAIN_ACCOUNT_MNEMONIC = //Alice
