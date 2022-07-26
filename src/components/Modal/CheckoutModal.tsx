@@ -58,10 +58,14 @@ function CheckoutModalInternal({
         setLoading(false);
         return;
       }
-      const signer = clientInterface.getExtension().getExtension().signer;
+      const signer = clientInterface.getExtension()?.getExtension?.()?.signer;
       await demoApi
         .buy(signer, id, formatGas(gas))
         .then((x) => {
+          if (x == null) {
+            toast.error('Something went wrong! Please try again.');
+            return;
+          }
           console.log({ success: x });
           toast.success('Purchase successful!');
           successCallback?.();
@@ -101,15 +105,19 @@ function CheckoutModalInternal({
 
   useEffect(() => {
     if (props.isOpen) {
-      const account = clientInterface.getExtension().getAccount();
+      const account = clientInterface.getExtension()?.getAccount?.();
       demoApi.setAccount(account).then(() => {
         demoApi
           .getBalance()
-          .then((x) => setBalance(new BN(x.toHuman().free.replaceAll(',', ''))))
+          .then((x) => setBalance(new BN((x?.toHuman().free || '0').replaceAll(',', ''))))
           .catch(console.log);
         demoApi
           .estimateBuyGasFees(id)
           .then((gas) => {
+            if (gas == null) {
+              toast.error('Something went wrong! Please try again.');
+              return;
+            }
             const formatted = formatPrice(gas);
             const doubledFormatted = formatPrice(new BN(gas).muln(2).toString());
             setEstimatedGas(formatted);
