@@ -37,9 +37,11 @@ challenges by calling the [prosopo protocol contract](https://github.com/prosopo
 the majority of previous captcha challenges correctly within a certain timeframe, they will be allowed to purchase an
 NFT. Otherwise, they will be shown a captcha challenge.
 
-#### `isHuman` checks in Dapp frontend website
+#### `is_human` checks in Dapp frontend website
 
-https://github.com/prosopo-io/demo-nft-marketplace/blob/65669d7d3909bb287718b028e95e013f1c29ee78/src/api/demoApi.ts#L211
+The frontend checks the `is_human` function in the protocol contract before it allows the user to purchase.
+
+https://github.com/prosopo-io/demo-nft-marketplace/blob/65669d7d3909bb287718b028e95e013f1c29ee78/src/components/Modal/CheckoutModal.tsx#L49-L59
 
 #### `is_human` checks in NFT Contract
 
