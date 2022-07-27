@@ -49,10 +49,10 @@ NFT. Otherwise, they will be shown a captcha challenge.
 
 https://github.com/prosopo-io/demo-nft-marketplace/blob/65669d7d3909bb287718b028e95e013f1c29ee78/src/api/demoApi.ts#L211
 
+#### `is_human` checks in NFT Contract
+
 There are additional checks in the NFT marketplace smart contract that prevent the user from calling the NFT marketplace
 contract directly, bypassing the frontend checks.
-
-#### `is_human` checks in NFT Contract
 
 https://github.com/prosopo-io/demo-nft-marketplace/blob/65669d7d3909bb287718b028e95e013f1c29ee78/contracts/lib.rs#L78-L79
 
