@@ -41,7 +41,7 @@ npm run dev
 The NFT marketplace is composed of two parts - the website and the smart contract backend. A user is requested to
 connect their web3 account when they enter the marketplace.
 
-https://raw.githubusercontent.com/prosopo-io/demo-nft-marketplace/article/.github/images/screenshot3.png
+![Selecting an account](https://raw.githubusercontent.com/prosopo-io/demo-nft-marketplace/article/.github/images/screenshot3.png)
 
 Once an account has been selected they can begin the
 purchase process. Upon clicking buy, the website frontend checks if the user's account has previously completed captcha
