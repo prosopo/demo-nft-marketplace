@@ -1,6 +1,6 @@
-## What is CornerStore?
+## What is the Demo NFT Marketplace?
 
-CornerStore is an open source NFT marketplace built by Rarible DAO using the Rarible Protocol. Prosopo has forked and
+The Demo NFT Marketplace is an open source NFT marketplace built by Rarible DAO using the Rarible Protocol. Prosopo has forked and
 modified the marketplace to work
 with [OpenBrush's PSP34 contracts](https://github.com/Supercolony-net/openbrush-contracts/tree/main/examples/psp34). The
 PSP34 contracts have also been modified so that they
