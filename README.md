@@ -49,10 +49,16 @@ There are additional checks in the NFT marketplace smart contract that prevent t
 contract directly, bypassing the frontend checks.
 
 The threshold number of captcha that the user must correctly answer is set to 80% within the last 5 minutes. In this
-example, these values are fixed in the NFT contract however they could reside elsewhere.
+example, the values are fixed in the NFT contract however they could reside elsewhere.
 
 https://github.com/prosopo-io/demo-nft-marketplace/blob/65669d7d3909bb287718b028e95e013f1c29ee78/contracts/lib.rs#L78-L79
 
 https://github.com/prosopo-io/demo-nft-marketplace/blob/65669d7d3909bb287718b028e95e013f1c29ee78/contracts/lib.rs#L203-L217
 
 https://github.com/prosopo-io/demo-nft-marketplace/blob/65669d7d3909bb287718b028e95e013f1c29ee78/contracts/lib.rs#L186-L200
+
+### Flow
+
+The entire process flow can be visualised as follows.
+
+![Main CAPTCHA flow](https://www.prosopo.io/static/maincaptchaflow.jpg)
