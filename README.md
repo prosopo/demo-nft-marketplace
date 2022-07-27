@@ -11,8 +11,8 @@ by Prosopo's human verification system.
 
 [Checkout the demo app!](https://nft.demo.prosopo.io/)
 
-<img width="500" alt="Main demo page" src="https://raw.githubusercontent.com/prosopo-io/demo-nft-marketplace/article/.github/images/screenshot1.png">
-<img width="500" alt="Product demo page" src="https://raw.githubusercontent.com/prosopo-io/demo-nft-marketplace/article/.github/images/screenshot2.png">
+<img alt="Main demo page" src="https://raw.githubusercontent.com/prosopo-io/demo-nft-marketplace/article/.github/images/screenshot1.png">
+<img alt="Product demo page" src="https://raw.githubusercontent.com/prosopo-io/demo-nft-marketplace/article/.github/images/screenshot2.png">
 
 ### Deploy
 
