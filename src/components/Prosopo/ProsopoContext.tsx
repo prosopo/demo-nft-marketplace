@@ -4,7 +4,7 @@ import {
   TExtensionAccount,
   getExtension,
   IExtensionInterface,
-  getWsProvider
+  getWsProvider,
 } from '@prosopo/procaptcha';
 import { CaptchaContextManager, useCaptcha } from '@prosopo/procaptcha-react';
 import toast, { ToastBar, Toaster } from 'react-hot-toast';
