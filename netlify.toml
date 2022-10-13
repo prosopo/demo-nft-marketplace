@@ -9,6 +9,10 @@
 [template.environment]
   NEXT_PUBLIC_API_BASE_URL = "https://service.demo.prosopo.io:3000"
   NEXT_PUBLIC_API_PATH_PREFIX = "/v1/prosopo"
-  NEXT_PUBLIC_CONTRACT_ADDRESS = "5Go2hCf1WHzKqt1HGCUwhKfUS85477HUHgvaKkMJRYBfyiUP"
+  NEXT_PUBLIC_CONTRACT_ADDRESS = "5FwHfbt6ua4GKcbNVwZvvgTwXszp1yj8G3LvK2FtaEtbmAJ9"
   NEXT_PUBLIC_CONTRACT_URL = "wss://service.demo.prosopo.io:9944"
   MAIN_ACCOUNT_MNEMONIC = "//Alice"
+  NEXT_PUBLIC_WEB2 = "false"
+  IMAGE_DOMAINS= "ipfs.io,prosopo.github.io"
+  NEXT_PUBLIC_PROSOPO_CONTRACT_ADDRESS= "5Cv7eP63mRCe8HjqY9eNHH3erFYC2e1EgCbfRgH1CmbPiKNp"
+  NEXT_PUBLIC_DAPP_NAME= "demo_nft_marketplace"
